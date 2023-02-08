@@ -1,11 +1,13 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-
+import React from "react"
+import styles from './page.module.css'
 
 function Login() {
-  return  <h1>Hello</h1>
-    
-  
+  return (
+  <main className={styles.main}>
+  <h1>Hello</h1>
+  </main>
+  )
+     
 }
 
 export default Login
