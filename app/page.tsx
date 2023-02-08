@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
+import BasicExample from '@/component/BasicExample'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -87,6 +88,7 @@ export default function Home() {
         </a>
       </div> */}
       <h1>ReactBootstrap Demo using NextJS</h1>
+      <BasicExample />
     </main>
   )
 }
