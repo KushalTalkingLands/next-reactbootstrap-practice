@@ -2,8 +2,12 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.css";
+import PrimaryButton from "./PrimaryButton";
 
-function BasicLoginForm() {
+function BasicLoginForm() { 
+    const handleData = () => {
+        console.log("clickk")
+    }
   return (
     <>
       <Form>
@@ -22,9 +26,12 @@ function BasicLoginForm() {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        
+        <PrimaryButton /><Button variant="primary" type="submit">
           Submit
         </Button>
+
+        <PrimaryButton onClick={handleData}/>
       </Form>
     </>
   );

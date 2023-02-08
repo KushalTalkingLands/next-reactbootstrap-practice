@@ -4,9 +4,11 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-function PrimaryButton() {
+function PrimaryButton(props) {
+    
   return (
-    <Button variant="outline-primary">Primary</Button>
+
+    <Button variant="outline-primary" onClick={props.handleData}>Primary</Button>
   )
 }
 
