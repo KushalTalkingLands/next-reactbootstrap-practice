@@ -1,11 +1,12 @@
 'use client'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function BasicExample() {
     return (
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="https://bit.ly/3lgeJdw" />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>
