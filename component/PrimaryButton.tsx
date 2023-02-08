@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 function PrimaryButton(props) {
-  const handleData =(e)=> {
+  const handleData =()=> {
     const newdata = "hello";
     props.handleData(newdata);
   }
