@@ -5,8 +5,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import PrimaryButton from "./PrimaryButton";
 
 function BasicLoginForm() { 
-    const handleData = () => {
-        console.log("clickk")
+    const handleData = (data) => {
+        console.log(data)
     }
   return (
     <>
@@ -27,11 +27,12 @@ function BasicLoginForm() {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
         
-        <PrimaryButton /><Button variant="primary" type="submit">
+        <PrimaryButton handleData={handleData}/>
+        <Button variant="primary" type="submit">
           Submit
         </Button>
 
-        <PrimaryButton onClick={handleData}/>
+        <PrimaryButton handleData={handleData}/>
       </Form>
     </>
   );

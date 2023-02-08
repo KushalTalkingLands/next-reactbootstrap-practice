@@ -5,10 +5,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 function PrimaryButton(props) {
+  const handleData =(e)=> {
+    const newdata = "hello";
+    props.handleData(newdata);
+  }
     
   return (
 
-    <Button variant="outline-primary" onClick={props.handleData}>Primary</Button>
+    <Button variant="outline-primary" onClick={handleData}>Primary</Button>
   )
 }
 
