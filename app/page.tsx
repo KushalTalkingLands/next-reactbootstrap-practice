@@ -1,11 +1,16 @@
+'use client'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { Inter, Waiting_for_the_Sunrise } from '@next/font/google'
 import styles from './page.module.css'
-import BasicExample from '@/component/BasicExample'
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const handleListPages = () => {
+    console.log("Open List Page")
+  }
   return (
     <main className={styles.main}>
       {/* <div className={styles.description}>
@@ -88,7 +93,7 @@ export default function Home() {
         </a>
       </div> */}
       <h1>ReactBootstrap Demo using NextJS</h1>
-      <BasicExample />
+      <Button variant="outline-primary" onClick={handleListPages}>Lets See Some Components and its usage</Button>
     </main>
   )
 }
