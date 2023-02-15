@@ -24,13 +24,13 @@ function BasicLoginForm() {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
+          {/* <Form.Check type="checkbox" label="Check me out" /> */}
         </Form.Group>
         
-        <PrimaryButton handleData={handleData}/>
+        {/* <PrimaryButton handleData={handleData}/>
         <Button variant="primary" type="submit">
           Submit
-        </Button>
+        </Button> */}
 
         <PrimaryButton handleData={handleData}/>
       </Form>
