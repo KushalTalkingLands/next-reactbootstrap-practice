@@ -4,6 +4,7 @@ import { Inter, Waiting_for_the_Sunrise } from '@next/font/google'
 import styles from './page.module.css'
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css';
+import BasicExample from '@/component/BasicExample';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,6 +12,9 @@ export default function Home() {
   const handleListPages = () => {
     console.log("Open List Page")
   }
+  let title = "Talking lands"
+  let descrription = "Welcome to talking lands . This is the test description"
+  let img = "https://bit.ly/3lgeJdw"
   return (
     <main className={styles.main}>
       {/* <div className={styles.description}>
@@ -93,6 +97,8 @@ export default function Home() {
         </a>
       </div> */}
       <h1>ReactBootstrap Demo using NextJS</h1>
+      <BasicExample title={title} description ={descrription} img={img} />
+      <BasicExample title={title} description ={descrription} img={img} />
       <Button variant="outline-primary" onClick={handleListPages}>Lets See Some Components and its usage</Button>
     </main>
   )
